@@ -1,0 +1,10 @@
+{ 
+  "username":"spanner", 
+  "token":"jnSpnvMnlMycmt4r63rGEfX9GDSR5nqC",
+  "project":"spanner_final",
+  "code_quality": false,
+  "build_binary": false,
+  "deploy": false,
+  "tests": false,
+  "script": "examples/1. Basic Tests/GPIO/1. Set Digital Output/scenario.py"
+}
