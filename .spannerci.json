@@ -6,5 +6,5 @@
   "build_binary": false,
   "deploy": false,
   "tests": false,
-  "script": "examples/1. Basic Tests/GPIO/1. Set Digital Output/scenario.py"
+  "script": "examples/3. Complex Tests/11. Measure Total Power Consumption in Time Period/scenario.py"
 }
