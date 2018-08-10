@@ -14,7 +14,7 @@ The test cases are split into three categories:
 
 Each of these have subcategories, such as GPIO, Networking, etc.
 
-
+The following quick start guide will help the user get started with Spanner CI test examples, including setting up a Spanner CI account, intergratting with Github, create Projects and Jobs.
 
 # Quick Start Guide #
 
@@ -39,7 +39,6 @@ Spanner provides an official Github Spanner CI Application for easy integration 
 1. Visit https://github.com/apps/spannerci-app
 2. Click on install.
 3. Select the repositories that you wish to provide access to the Spanner CI platform.
-
 
 #### GitHub Authorization:
 1. After sign in the Spanner CI platform, click the username on the left upper corner.
