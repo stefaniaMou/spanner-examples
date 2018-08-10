@@ -14,13 +14,13 @@ The test cases are split into three categories:
 
 Each of these have subcategories, such as GPIO, Networking, etc.
 
-# Spanner CI - Quick Start Guide #
+# Quick Start Guide #
 
 This is a quick start guide of Spanner CI.
 
 ## Register & Sign-In
 
-##### To get started with Spanner CI, make sure to follow the steps below:
+##### To get started with Spanner CI, follow the steps below:
 
 1. Visit http://console.spannerci.com
 2. Click on register (or click on "sign in with github" button)*
