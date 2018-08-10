@@ -35,13 +35,13 @@ This is a quick start guide of Spanner CI.
 
 Spanner provides an official Github Spanner CI Application for easy integration with GitHub. This authorises the Spanner CI platform to access the Github repositories. Please note that the account where the GitHub Spanner CI app is installed, must be the same as the one authorised using the GitHub sign in. 
 
-####Installation of GitHub Spanner CI App:
+#### Installation of GitHub Spanner CI App:
 1. Visit https://github.com/apps/spannerci-app
 2. Click on install.
 3. Select the repositories that you wish to provide access to the Spanner CI platform.
 
 
-####GitHub Authorization:
+#### GitHub Authorization:
 1. After sign in the Spanner CI platform, click the username on the left upper corner.
 2. Select Settings on the dropdown menu.
 3. Click on the "Connect with Github" button to link the GitHub account with Spanner CI.
@@ -88,7 +88,6 @@ This will automatically trigger a Spanner CI Job on each Pull Request ***
 1. Click on the Pull request button in the Github Repository homepage.
 2. Create a new Pull request and wait for the notification messages delivered from the SpannerCI platform.
 3. After the completion of the test cases, a message will appear together with a link to the SpannerCI platform with more information, on the run itself.
-
 
 ### Job History
 
