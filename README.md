@@ -41,7 +41,7 @@ To freely experiment with the **Spanner CI Test Examples**, it is necessary to f
 2. Click on install.
 3. Select the repository that you created in the previous section in order to provide access to the Spanner CI platform.
 
-Please note that the account where the GitHub Spanner CI app is installed, must be the same as the one authorised using the GitHub sign in. 
+Note: that the account where the GitHub Spanner CI app is installed, must be the same as the one authorised using the GitHub sign in. 
 
 #### GitHub Authorization:
 1. After sign in the Spanner CI platform, click the username on the left upper corner.
