@@ -34,12 +34,12 @@ Note: By signing in with GitHub, the **GitHub Authorization** section below can 
 Spanner provides an official Github Spanner CI Application for easy integration with GitHub. This authorises the Spanner CI platform to access the Github repositories. Please note that the account where the GitHub Spanner CI app is installed, must be the same as the one authorised using the GitHub sign in. 
 
 #### Create a Github repository:
-In order to the **Spanner CI Test Examples**, it is necessary to fork the spanner-examples reposirtory in your Github account.
+In order to freely experiment with the **Spanner CI Test Examples**, it is necessary to fork this repository into your Github account.
 
 #### Installation of GitHub Spanner CI App:
 1. Visit https://github.com/apps/spannerci-app
 2. Click on install.
-3. Select the repositories that you wish to provide access to the Spanner CI platform.
+3. Select the repository that you created in the previous section in order to provide access to the Spanner CI platform.
 
 #### GitHub Authorization:
 1. After sign in the Spanner CI platform, click the username on the left upper corner.
