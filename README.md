@@ -16,7 +16,7 @@ Each of these have subcategories, such as GPIO, Networking, etc.
 
 # Quick Start Guide #
 
-This is a quick start guide of Spanner CI. It provides step-by-step guidelines to get started with *Spanner CI Test Examples*, including setting up a Spanner CI account, intergratting with Github, create Projects and Jobs.
+This is a quick start guide of Spanner CI. It provides step-by-step guidelines to get started with **Spanner CI Test Examples**, including setting up a Spanner CI account, intergratting with Github, create Projects and Jobs.
 
 ## Register & Sign-In
 
