@@ -1,7 +1,5 @@
 # Spanner CI Test Examples #
 
-## Introduction
-
 This documentation's goal is to define a set of custom test scripts, to be used by the Spanner CI team as a guideline of what the libraries should look like, what kind of APIs we'd want to provide to our users, and finally how they woud be used in a script.
 
 The secondary goal of these examples is to provide a future documentation to our users, which will help them use our product.
