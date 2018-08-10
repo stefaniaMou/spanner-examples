@@ -14,7 +14,7 @@ The test cases are split into three categories:
 
 Each of these have subcategories, such as GPIO, Networking, etc.
 
-The following quick start guide will help the user get started with Spanner CI test examples, including setting up a Spanner CI account, intergratting with Github, create Projects and Jobs.
+The following quick start guide will help our users get started with Spanner CI test examples, including setting up a Spanner CI account, intergratting with Github, create Projects and Jobs.
 
 # Quick Start Guide #
 
