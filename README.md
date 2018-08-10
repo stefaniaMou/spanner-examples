@@ -27,7 +27,7 @@ This is a quick start guide of Spanner CI. It provides step-by-step guidelines t
 3. Fill in the form with the appropriate information and click on the Register button.
 4. Use the credentials provided above to sign-in to the SpannerCI platform.
 
-\* By signing in with GitHub, the GitHub authorisation section below can be skipped.
+\* By signing in with GitHub, the **GitHub Authorization** section below can be skipped.
 
 ## Integration with GitHub
 
