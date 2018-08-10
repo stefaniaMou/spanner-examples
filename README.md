@@ -51,11 +51,10 @@ Note: that the account where the GitHub Spanner CI app is installed, must be the
 
 ## Spanner Configuration
 
-Modify .spannerci.json configuration file to enable Spanner CI integration. An structure of the file is shown below:
+Modify .spannerci.json configuration file to enable Spanner CI integration. The structure of the file is shown below:
 
     {
       "username":"", 
-      "token":"",
       "project":"",
       "code_quality": false,
       "build_binary": false,
@@ -67,7 +66,6 @@ The most important setting of this file is the path of the script that contains 
 
     { 
       "username":"spanner", 
-      "token":"jnSpnvMnlMycmt4r63rGEfX9GDSR5nqC",
       "project":"spanner-examples",
       "code_quality": false,
       "build_binary": false,
@@ -81,7 +79,7 @@ Spanner supports the creation of one or more projects for working with different
 
 1. Select Projects from the navigation menu on the left side of the dashboard.
 2. Click on New Project.
-3. From there, a user can either add a new project manually or select a repository from the connected repositories on Github.
+3. Select the repository from the connected repositories on Github.
 4. Click on create project.
 
 ## Spanner Jobs
@@ -90,7 +88,7 @@ Spanner executes each test script inside a virtual environment. For each run, a 
 ### Manual Job Creation:
 1. Click on projects, from the navigation menu on the left side of the dashboard.
 2. Select the run by Branch or Commit option. By selecting run by commit, the commit id (sha hash) should manually be provided. By selecting the branch option, an available branch from the repository can be selected.
-3. Click on the Play Button to start the new job.
+3. Click on the play Button to start the new job.
 4. If any errors have occurred, an alert message will appear prompting the error on the test script.
 5. If the test has completed successfully, a message will appear and the user will be redirected to the Jobs page.
 
