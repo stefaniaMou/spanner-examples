@@ -31,7 +31,7 @@ Note: By signing in with GitHub, the **GitHub Authorization** section below can 
 
 ## Integration with GitHub
 
-Spanner provides an official Github Spanner CI Application for easy integration with GitHub. This authorises the Spanner CI platform to access the Github repositories. Please note that the account where the GitHub Spanner CI app is installed, must be the same as the one authorised using the GitHub sign in. 
+Spanner provides an official Github Spanner CI Application for easy integration with GitHub. This authorises the Spanner CI platform to access Github repositories. Please note that the account where the GitHub Spanner CI app is installed, must be the same as the one authorised using the GitHub sign in. 
 
 #### Create a Github repository:
 In order to freely experiment with the **Spanner CI Test Examples**, it is necessary to fork this repository into your Github account.
@@ -49,7 +49,7 @@ In order to freely experiment with the **Spanner CI Test Examples**, it is neces
 
 ## Spanner Configuration
 
-Add a .spannerci.json configuration file to your repository to enable Spanner integration. An example file is shown below:
+Modify .spannerci.json configuration file to enable Spanner CI integration. An example file is shown below:
 
     {
       "code_quality": false,
@@ -58,7 +58,7 @@ Add a .spannerci.json configuration file to your repository to enable Spanner in
       "script": "path/to/script/myscript.py"
     }
     
-The most important setting of this file is the path of the Test script that contains your functional tests for your product. 
+The most important setting of this file is the path of the script that contains the example test. In the folder '''/examples''' 
 
 Example test scripts for various use cases can be found in our GitHub page: 
 https://github.com/spannerci.
