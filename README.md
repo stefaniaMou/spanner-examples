@@ -62,7 +62,7 @@ Modify .spannerci.json configuration file to enable Spanner CI integration. The 
       "script": "path/to/script/myscript.py"
     }
     
-The most important setting of this file is the path of the script that contains the example test. Example test scripts for various use cases can be found in the folder `examples/`. Choose the one that you want to experiment with by defining the right path, as in the example below:
+The most important setting of this file is the path of the script that contains the example test. In the folder `examples/` can be found example test scripts for various use cases. Choose the one that you want to experiment with by defining the right path, as in the example below:
 
     { 
       "username":"spanner", 
