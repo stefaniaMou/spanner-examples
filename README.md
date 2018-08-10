@@ -31,7 +31,7 @@ Note: By signing in with GitHub, the **GitHub Authorization** section below can 
 
 ## Integration with GitHub
 
-Spanner provides an official Github Spanner CI Application for easy integration with GitHub. This authorises the Spanner CI platform to access Github repositories. Please note that the account where the GitHub Spanner CI app is installed, must be the same as the one authorised using the GitHub sign in. 
+Spanner provides an official Github Spanner CI Application for easy integration with GitHub. This authorises the Spanner CI platform to access Github repositories. 
 
 #### Create a Github repository:
 To freely experiment with the **Spanner CI Test Examples**, it is necessary to fork this repository into your Github account.
@@ -40,6 +40,8 @@ To freely experiment with the **Spanner CI Test Examples**, it is necessary to f
 1. Visit https://github.com/apps/spannerci-app
 2. Click on install.
 3. Select the repository that you created in the previous section in order to provide access to the Spanner CI platform.
+
+Please note that the account where the GitHub Spanner CI app is installed, must be the same as the one authorised using the GitHub sign in. 
 
 #### GitHub Authorization:
 1. After sign in the Spanner CI platform, click the username on the left upper corner.
@@ -52,13 +54,16 @@ To freely experiment with the **Spanner CI Test Examples**, it is necessary to f
 Modify .spannerci.json configuration file to enable Spanner CI integration. An structure of the file is shown below:
 
     {
+      "username":"spanner", 
+      "token":"jnSpnvMnlMycmt4r63rGEfX9GDSR5nqC",
+      "project":"spanner_final",
       "code_quality": false,
       "build_binary": false,
       "deploy": false,
       "script": "path/to/script/myscript.py"
     }
     
-The most important setting of this file is the path of the script that contains the example test. Example test scripts for various use cases can be found in the folder `examples/`. Choose the one that you want to experiment on by defining the right path, as in the example below:
+The most important setting of this file is the path of the script that contains the example test. Example test scripts for various use cases can be found in the folder `examples/`. Choose the one that you want to experiment with by defining the right path, as in the example below:
 
     { 
       "username":"spanner", 
