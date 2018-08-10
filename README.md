@@ -34,7 +34,7 @@ Note: By signing in with GitHub, the **GitHub Authorization** section below can 
 Spanner provides an official Github Spanner CI Application for easy integration with GitHub. This authorises the Spanner CI platform to access Github repositories. Please note that the account where the GitHub Spanner CI app is installed, must be the same as the one authorised using the GitHub sign in. 
 
 #### Create a Github repository:
-In order to freely experiment with the **Spanner CI Test Examples**, it is necessary to fork this repository into your Github account.
+To freely experiment with the **Spanner CI Test Examples**, it is necessary to fork this repository into your Github account.
 
 #### Installation of GitHub Spanner CI App:
 1. Visit https://github.com/apps/spannerci-app
@@ -49,7 +49,7 @@ In order to freely experiment with the **Spanner CI Test Examples**, it is neces
 
 ## Spanner Configuration
 
-Modify .spannerci.json configuration file to enable Spanner CI integration. An example file is shown below:
+Modify .spannerci.json configuration file to enable Spanner CI integration. An structure of the file is shown below:
 
     {
       "code_quality": false,
@@ -58,13 +58,19 @@ Modify .spannerci.json configuration file to enable Spanner CI integration. An e
       "script": "path/to/script/myscript.py"
     }
     
-The most important setting of this file is the path of the script that contains the example test. In the folder '''/examples''' 
+The most important setting of this file is the path of the script that contains the example test. In the folder `/examples` there are several example test scripts. Choose the one that you want to experiment by defining its path, as in the example below:
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
 
 Example test scripts for various use cases can be found in our GitHub page: 
 https://github.com/spannerci.
 
 ## Spanner Projects
-Spanner supports the creation of one or more projects for working with different repos etc. To create a new project:
+Spanner supports the creation of one or more projects for working with different repositories. To create a new project:
 
 1. Select Projects from the navigation menu on the left side of the dashboard.
 2. Click on New Project.
