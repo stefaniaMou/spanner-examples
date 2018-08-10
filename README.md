@@ -20,7 +20,7 @@ This is a quick start guide of Spanner CI. It provides step-by-step guidelines t
 
 ## Register & Sign-In
 
-##### To get started with Spanner CI, follow the steps below:
+#### To get started with Spanner CI, follow the steps below:
 
 1. Visit http://console.spannerci.com
 2. Click on register (or click on "sign in with github" button)
