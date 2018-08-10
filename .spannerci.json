@@ -1,7 +1,6 @@
 { 
   "username":"antoniakb2cae68a89ec4a59", 
-  "token":"jnSpnvMnlMycmt4r63rGEfX9GDSR5nqC",
-  "project":"spanner-examples",
+  "project":"an-example",
   "code_quality": false,
   "build_binary": false,
   "deploy": false,
