@@ -1,9 +1,14 @@
-{ 
-  "username":"antoniakb2cae68a89ec4a59", 
-  "project":"an-example",
-  "code_quality": false,
-  "build_binary": false,
-  "deploy": false,
-  "tests": false,
-  "script": "examples/1. Basic Tests/GPIO/2. Read Digital Input/scenario.py"
+{
+	"build_binary":
+	{
+		"platform": "particle photon",
+		"source": "app", 
+		"build_command": "ls && make all",
+	},
+	"test_automation" : 
+	{
+		"testplan": "mytests.py"
+	},
+	"code_quality":false,
+	"deploy": false
 }
