@@ -3,7 +3,7 @@
 	{
 		"platform": "particle photon",
 		"source": "app", 
-		"build_command": "ls && make all",
+		"build_command": "ls && make all"
 	},
 	"test_automation" : 
 	{
