@@ -1,9 +1,11 @@
 {
 	"build_binary":
 	{
-		"platform": "particle photon",
-		"source": "app", 
-		"build_command": "ls && make all"
+		"platform": "aws esp32",
+		"source": "esp32_devkitc_demo", 
+		"build_command": "ls && make all",
+		"aws_credentials": "creds/esp32_aws_creds.txt",
+		"wifi_credentials": "creds/esp32_wifi_creds.json"
 	},
 	"test_automation" : 
 	{
