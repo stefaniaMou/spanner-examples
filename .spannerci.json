@@ -3,7 +3,7 @@
 	{
 		"platform": "aws esp32",
 		"source": "esp32_devkitc_demo", 
-		"build_command": "ls && make all",
+		"build_command": "ls",
 		"aws_credentials": "creds/esp32_aws_creds.txt",
 		"wifi_credentials": "creds/esp32_wifi_creds.json"
 	},
