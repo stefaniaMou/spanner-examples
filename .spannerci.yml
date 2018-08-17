@@ -1,6 +1,6 @@
 build_binary:
         platform: particle photon
-        source: example_app
+        source: app
         build_command: ls && make clean && make
 test_automation: 
        testplan: mytests.py
