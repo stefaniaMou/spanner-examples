@@ -3,7 +3,7 @@ build_binary:
         source: app
         build_command: ls && make clean && make
 test_automation: 
-       testplan: mytests.py
+       testplan: Scenario.py
 code_quality:
        false
 deploy:  
