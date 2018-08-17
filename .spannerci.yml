@@ -6,5 +6,7 @@ build_binary:
         wifi_credentials: creds/esp32_wifi_creds.json
 test_automation: 
        testplan: mytests.py
-code_quality:false
-deploy: false
+code_quality:
+       false
+deploy:  
+       false
