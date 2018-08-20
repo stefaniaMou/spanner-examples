@@ -5,7 +5,7 @@ build_binary:
         aws_credentials: creds/esp32_aws_creds.txt
         wifi_credentials: creds/esp32_wifi_creds.json
 test_automation: 
-       testplan: mytests.py
+       testplan: Scenario.py
 code_quality:
        false
 deploy:  
