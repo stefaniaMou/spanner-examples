@@ -15,7 +15,7 @@ build_binary:
     # compulsory
     type: 'particle photon'
     # compulsory
-    source_dir: 'creds.txt'
+    source_dir: 'app'
     # compulsory/optional
     variables:
         AWS_TOKEN: “asdgasdgasdg”
