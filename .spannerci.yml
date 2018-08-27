@@ -1,10 +1,73 @@
+# ***********************************
+# define spanner's configuration file
+# ***********************************
+
+variables:
+   MY_GLOBAL_VAR: “global env variable”
+
+# code quality options
+code_qa:
+    # compulsory
+    filename: 'template.cpp'
+
+# build options
 build_binary:
-        platform: aws esp32
-        source: esp32_devkitc_demo 
-        build_command: ls && make clean && make
-        aws_credentials: creds/esp32_aws_creds.txt
-        wifi_credentials: creds/esp32_wifi_creds.json
-test_automation: 
-       testplan: Scenario.py
-code_quality: false
-deploy: false
+    # compulsory
+    type: 'aws esp32'
+    # compulsory
+    source_dir: 'creds.txt'
+    # compulsory/optional
+    variables:
+        AWS_TOKEN: “asdgasdgasdg”
+        AWS_KEY: “sadasdfasfd”
+    # optional
+    build_command:
+    # optional
+    binary_name: 'template.bin'
+    # optional
+    pre_flight:
+    # optional
+    post_flight:
+    # optional
+    on_failure:
+    # optional
+    on_success:
+
+# run options
+testing:
+    # compulsory
+    filename: 'template.py'    
+    # optional
+    variables:
+        ACCESS_TOKEN: "sdasxas23"
+    # optional
+    pre_flight:
+    # optional
+    post_flight:
+    # optional
+    on_failure:
+    # optional
+    on_success:
+    # optional
+    binary_update:
+        # compulsory
+        platform: 'aws esp32'
+
+
+# # deployment options
+# deployment:
+#     platform:
+#     credentials:
+#     target:
+#     binary_url:
+#     on_success:
+
+# # pre_flight options
+# pre_flight:
+#     slack:
+
+# # post_flight options
+# post_flight:
+#     slack:
+
+
