@@ -13,7 +13,7 @@ code_qa:
 # build options
 build_binary:
     # compulsory
-    type: 'aws esp32'
+    type: 'particle photon'
     # compulsory
     source_dir: 'creds.txt'
     # compulsory/optional
@@ -23,7 +23,7 @@ build_binary:
     # optional
     build_command:
     # optional
-    binary_name: 'template.bin'
+    binary_name:
     # optional
     pre_flight:
     # optional
