@@ -21,7 +21,7 @@ build_binary:
         AWS_TOKEN: “asdgasdgasdg”
         AWS_KEY: “sadasdfasfd”
     # optional
-    build_command:
+    build_command: 'make all'
     # optional
     binary_name:
     # optional
