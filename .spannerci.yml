@@ -13,15 +13,15 @@ code_qa:
 # build options
 build_binary:
     # compulsory
-    type: 'particle photon'
+    type: 'aws esp32'
     # compulsory
-    source_dir: 'app'
+    source_dir: 'esp32_devkitc_demo'
     # compulsory/optional
     variables:
         AWS_TOKEN: “asdgasdgasdg”
         AWS_KEY: “sadasdfasfd”
     # optional
-    build_command:
+    build_command: ls
     # optional
     binary_name:
     # optional
