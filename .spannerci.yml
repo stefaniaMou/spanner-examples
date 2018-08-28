@@ -18,7 +18,7 @@ build_binary:
     source_dir: 'esp32_devkitc_demo'
     # compulsory/optional
     variables:
-        AWS_CREDS: 'creds/esp32_aws_creds.txt'
+#         AWS_CREDS: 'creds/esp32_aws_creds.txt'
         WIFI_CREDS: 'creds/esp32_wifi_creds.json'
     # optional
     build_command:
