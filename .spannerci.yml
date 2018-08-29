@@ -8,7 +8,7 @@ variables:
 # code quality options
 code_qa:
     # compulsory
-    filename: 'template.cpp'
+    source_dir: 'template.cpp'
 
 # build options
 build_binary:
@@ -40,7 +40,7 @@ build_binary:
 # run options
 testing:
     # compulsory
-    filename: 'Scenario.py'    
+    source_dir: 'Scenario.py'    
     # optional
     variables:
         ACCESS_TOKEN: "sdasxas23"
