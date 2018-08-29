@@ -13,9 +13,9 @@ code_qa:
 # build options
 build_binary:
     # compulsory
-    type: 'aws esp32'
+    type: 'particle photon'
     # compulsory
-    source_dir: 'esp32_devkitc_demo'
+    source_dir: 'app'
     # compulsory/optional
     variables:
       AWS_ACCESS_KEY_ID : 123
