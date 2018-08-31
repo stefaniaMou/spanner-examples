@@ -56,7 +56,7 @@ testing:
     binary_update:
         # compulsory
         platform: 'aws esp32'
-        binary: https://www.google.com/
+        binary: path/to/bin
 
 
 # # deployment options
