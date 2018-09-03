@@ -56,7 +56,7 @@ testing:
     binary_update:
         # compulsory
         platform: 'aws esp32'
-        binary: path/to/bin
+        binary: binary/mike_binary.bin
 
 
 # # deployment options
