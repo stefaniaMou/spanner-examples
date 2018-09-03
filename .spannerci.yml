@@ -21,7 +21,7 @@ build_binary:
     # optional
     build_command: ls -la && make clean && make
     # optional
-    binary_name:
+    binary_name: memas_binary
     # optional
     pre_flight:
     # optional
