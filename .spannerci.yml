@@ -2,13 +2,13 @@
 # define spanner's configuration file
 # ***********************************
 
-variables:
-   MY_GLOBAL_VAR: “global env variable”
+# variables:
+#    MY_GLOBAL_VAR: “global env variable”
 
 # code quality options
-code_qa:
+# code_qa:
     # compulsory
-    source_dir: 'template.cpp'
+#     source_dir: 'template.cpp'
 
 # build options
 build_binary:
@@ -38,25 +38,25 @@ build_binary:
     on_success:
 
 # run options
-testing:
+# testing:
     # compulsory
-    source_dir: 'Scenario.py'    
+#     source_dir: 'Scenario.py'    
     # optional
-    variables:
-        ACCESS_TOKEN: "sdasxas23"
+#     variables:
+#         ACCESS_TOKEN: "sdasxas23"
     # optional
-    pre_flight:
+#     pre_flight:
     # optional
-    post_flight:
+#     post_flight:
     # optional
-    on_failure:
+#     on_failure:
     # optional
-    on_success:
+#     on_success:
     # optional
-    binary_update:
+#     binary_update:
         # compulsory
-        platform: 'aws esp32'
-        binary: auto
+#         platform: 'aws esp32'
+#         binary: auto
 
 
 # # deployment options
