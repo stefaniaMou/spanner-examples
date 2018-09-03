@@ -11,33 +11,17 @@
 #     source_dir: 'template.cpp'
 
 # build options
-build_binary:
+# build_binary:
     # compulsory
-    type: 'particle photon'
+#     type: 'particle photon'
     # compulsory
-    source_dir: 'app'
+#     source_dir: 'app'
     # compulsory/optional
-    variables:
-    # optional
-    build_command: ls -la && make clean && make
-    # optional
-    binary_name: memas_binary
-    # optional
-    pre_flight:
-    # optional
-    post_flight:
-    # optional
-    on_failure:
-    # optional
-    on_success:
-
-# run options
-# testing:
-    # compulsory
-#     source_dir: 'Scenario.py'    
-    # optional
 #     variables:
-#         ACCESS_TOKEN: "sdasxas23"
+    # optional
+#     build_command: ls -la && make clean && make
+    # optional
+#     binary_name: memas_binary
     # optional
 #     pre_flight:
     # optional
@@ -46,11 +30,27 @@ build_binary:
 #     on_failure:
     # optional
 #     on_success:
+
+# run options
+testing:
+    # compulsory
+    source_dir: 'Scenario.py'    
     # optional
-#     binary_update:
+    variables:
+        ACCESS_TOKEN: "sdasxas23"
+#     optional
+    pre_flight:
+#     optional
+    post_flight:
+    # optional
+    on_failure:
+    # optional
+    on_success:
+    # optional
+    binary_update:
         # compulsory
-#         platform: 'aws esp32'
-#         binary: auto
+        platform: 'aws esp32'
+        binary: auto
 
 
 # # deployment options
