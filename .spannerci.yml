@@ -19,7 +19,7 @@ build_binary:
     # compulsory/optional
     variables:
     # optional
-    build_command: ls -la && make clean && make
+    build_command: ls -la && make clean
     # optional
     binary_name: memas_binary
     # optional
