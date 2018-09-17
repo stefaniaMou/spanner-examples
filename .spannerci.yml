@@ -19,7 +19,7 @@ build_binary:
     # compulsory/optional
     variables:
     # optional
-    build_command: make clean && make
+    build_command: make clean
     # optional
     binary_name: my_binary
     # optional
@@ -32,26 +32,26 @@ build_binary:
     on_success:
 
 # run options
-testing:
-    # compulsory
-    source_dir: 'Scenario.py'    
-    # optional
-    variables:
-        ACCESS_TOKEN: "sdasxas23"
-#     optional
-    pre_flight:
-#     optional
-    post_flight:
-#     optional
-    on_failure:
-    # optional
-    on_success:
-    # optional
-    binary_update:
-#         compulsory
-        platform: 'aws esp32'
-        binary: auto
-#         binary: https://drive.google.com/open?id=1pqwckXPclrgKaeJy3-7hWkkfVH2b-61l
+# testing:
+#     # compulsory
+#     source_dir: 'Scenario.py'    
+#     # optional
+#     variables:
+#         ACCESS_TOKEN: "sdasxas23"
+# #     optional
+#     pre_flight:
+# #     optional
+#     post_flight:
+# #     optional
+#     on_failure:
+#     # optional
+#     on_success:
+#     # optional
+#     binary_update:
+# #         compulsory
+#         platform: 'aws esp32'
+#         binary: auto
+# #         binary: https://drive.google.com/open?id=1pqwckXPclrgKaeJy3-7hWkkfVH2b-61l
 #         binary: binary/mike_binary.bin
 
 # # deployment options
