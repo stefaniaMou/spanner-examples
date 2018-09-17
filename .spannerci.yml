@@ -49,7 +49,7 @@ testing:
     # optional
     binary_update:
 #         compulsory
-        platform: 'aws esp32'
+        platform: 'particle photon'
         binary: auto
 #         binary: https://drive.google.com/open?id=1pqwckXPclrgKaeJy3-7hWkkfVH2b-61l
 #         binary: binary/mike_binary.bin
