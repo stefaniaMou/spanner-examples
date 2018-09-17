@@ -11,25 +11,25 @@
 #     source_dir: 'template.cpp'
 
 # build options
-build_binary:
-    # compulsory
-    type: 'particle photon'
-    # compulsory
-    source_dir: 'app'
-    # compulsory/optional
-    variables:
-    # optional
-    build_command: make clean
-    # optional
-    binary_name: my_binary
-    # optional
-    pre_flight:
-    # optional
-    post_flight:
-    # optional
-    on_failure:
-    # optional
-    on_success:
+# build_binary:
+#     # compulsory
+#     type: 'particle photon'
+#     # compulsory
+#     source_dir: 'app'
+#     # compulsory/optional
+#     variables:
+#     # optional
+#     build_command: make clean
+#     # optional
+#     binary_name: my_binary
+#     # optional
+#     pre_flight:
+#     # optional
+#     post_flight:
+#     # optional
+#     on_failure:
+#     # optional
+#     on_success:
 
 # run options
 testing:
