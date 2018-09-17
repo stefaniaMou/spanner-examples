@@ -19,7 +19,7 @@ build_binary:
     # compulsory/optional
     variables:
     # optional
-    build_command: make clean
+    build_command: make
     # optional
     binary_name: my_binary
     # optional
