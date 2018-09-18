@@ -15,7 +15,7 @@ def measure_power_consumption():
     testboard.digitalWrite(OUTPUT_PIN, "LOW");
 
     # Wait for a while for it to shut down
-    time.sleep(10)
+    time.sleep(2)
 
     # Turn the device back on
     testboard.digitalWrite(OUTPUT_PIN, "HIGH");
@@ -23,13 +23,13 @@ def measure_power_consumption():
     # The device runs some initialization actions in the beginning, which are
     # not indicative of the true power consumption. Therefore we wait for a
     # while for the initial conditions to pass
-    time.sleep(90)
+    time.sleep(5)
 
     # Start measuring power consumption
     testboard.startPowerMeasurement()
 
     # Measure for 5 minutes
-    time.sleep(1*10)
+    time.sleep(10)
 
     # Stop measuring power consumption
     testboard.stopPowerMeasurement()
@@ -38,7 +38,7 @@ def measure_power_consumption():
     # measuredPowerConsumption() will return the total power consumption
     # measured in the measuring period, in mAh. Then we use the assertLessThan()
     # function to assert that this is less than the target value of 100.
-    spanner.assertLessThan(1000, testboard.measuredPowerConsumption())
+    spanner.assertLessThan(1, testboard.measuredPowerConsumption())
 
 if __name__ == "__main__":
     measure_power_consumption()
