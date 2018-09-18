@@ -1,16 +1,16 @@
-build_binary:
-#     # compulsory
-    type: 'particle photon'
-#     # compulsory
-    source_dir: 'app'
-#     # optional
-    build_command: make
-#     # optional
-    binary_name: my_binary
+# build_binary:
+# #     # compulsory
+#     type: 'particle photon'
+# #     # compulsory
+#     source_dir: 'app'
+# #     # optional
+#     build_command: make
+# #     # optional
+#     binary_name: my_binary
 
-# testing:
+testing:
     # compulsory
-#     source_dir: 'Scenario.py'    
+    source_dir: 'Scenario.py'    
     # optional
 #     binary_update:
 #         compulsory
