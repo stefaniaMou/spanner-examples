@@ -14,8 +14,7 @@ import time
 import Device
 from Spanner import Spanner
 
-IFTTT_KEY = "hgql1kyuQEL-KJfSbP7v0v63TOphPTSLoE5nhxrfFa-"
-device = Device.Ifttt(IFTTT_KEY)
+device = Device.Ifttt("IFTTT_KEY")
 
 def send_network_cmds():
     # send network command to our device
