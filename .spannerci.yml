@@ -1,51 +1,16 @@
-# ***********************************
-# define spanner's configuration file
-# ***********************************
-
-# variables:
-#    MY_GLOBAL_VAR: “global env variable”
-
-# code quality options
-# code_qa:
+build_binary:
     # compulsory
-#     source_dir: 'template.cpp'
-
-# build options
-# build_binary:
+    type: 'particle photon'
     # compulsory
-#     type: 'particle photon'
-    # compulsory
-#     source_dir: 'app'
-    # compulsory/optional
-#     variables:
+    source_dir: 'app'
     # optional
 #     build_command: make
     # optional
 #     binary_name: my_binary
-#     # optional
-#     pre_flight:
-#     # optional
-#     post_flight:
-#     # optional
-#     on_failure:
-#     # optional
-#     on_success:
 
-# run options
-testing:
+# testing:
     # compulsory
-    source_dir: 'Scenario.py'    
-    # optional
-#     variables:
-#         ACCESS_TOKEN: "sdasxas23"
-#     optional
-#     pre_flight:
-#     optional
-#     post_flight:
-#     optional
-#     on_failure:
-    # optional
-#     on_success:
+#     source_dir: 'Scenario.py'    
     # optional
 #     binary_update:
 #         compulsory
@@ -53,21 +18,3 @@ testing:
 #         binary: auto
 #         binary: https://drive.google.com/open?id=1pqwckXPclrgKaeJy3-7hWkkfVH2b-61l
 #         binary: binary/mike_binary.bin
-
-# # deployment options
-# deployment:
-#     platform:
-#     credentials:
-#     target:
-#     binary_url:
-#     on_success:
-
-# pre_flight options
-# pre_flight:
-# #     slack:
-
-# # post_flight options
-# post_flight:
-# #     slack:
-
-
