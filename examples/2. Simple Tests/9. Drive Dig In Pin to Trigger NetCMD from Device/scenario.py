@@ -17,12 +17,8 @@ import spanner
 import Device from AWSDevice
 import Testboard
 
-
-DEVICE_ID = "200023001347343438323536"
-device = Device(DEVICE_ID)
-
-TESTBOARD_ID = "200023001347343438323536"
-testboard = Testboard(TESTBOARD_ID)
+device = Device("device_name")
+testboard = Testboard("testboard_name")
 
 # Our Product's Input will be connected the Testboard's Pin D3, making it our
 # Output Pin
