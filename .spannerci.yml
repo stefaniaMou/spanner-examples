@@ -32,9 +32,9 @@
 #     on_success:
 
 # run options
-# testing:
+testing:
     # compulsory
-#     source_dir: 'Scenario.py'    
+    source_dir: 'Scenario.py'    
     # optional
 #     variables:
 #         ACCESS_TOKEN: "sdasxas23"
@@ -47,12 +47,12 @@
     # optional
 #     on_success:
     # optional
-#     binary_update:
+    binary_update:
 #         compulsory
-#         platform: 'particle photon'
+        platform: 'particle photon'
 #         binary: auto
 #         binary: https://drive.google.com/open?id=1pqwckXPclrgKaeJy3-7hWkkfVH2b-61l
-#         binary: binary/mike_binary.bin
+        binary: binary/mike_binary.bin
 
 # # deployment options
 # deployment:
