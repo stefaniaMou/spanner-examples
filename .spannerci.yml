@@ -11,17 +11,17 @@
 #     source_dir: 'template.cpp'
 
 # build options
-# build_binary:
-#     # compulsory
-#     type: 'particle photon'
-#     # compulsory
-#     source_dir: 'app'
-#     # compulsory/optional
-#     variables:
-#     # optional
-#     build_command: make
-#     # optional
-#     binary_name: my_binary
+build_binary:
+    # compulsory
+    type: 'particle photon'
+    # compulsory
+    source_dir: 'app'
+    # compulsory/optional
+    variables:
+    # optional
+    build_command: make
+    # optional
+    binary_name: my_binary
 #     # optional
 #     pre_flight:
 #     # optional
@@ -50,8 +50,8 @@ testing:
     binary_update:
 #         compulsory
         platform: 'particle photon'
-#         binary: auto
-        binary: https://drive.google.com/open?id=1pqwckXPclrgKaeJy3-7hWkkfVH2b-61l
+        binary: auto
+#         binary: https://drive.google.com/open?id=1pqwckXPclrgKaeJy3-7hWkkfVH2b-61l
 #         binary: binary/mike_binary.bin
 
 # # deployment options
