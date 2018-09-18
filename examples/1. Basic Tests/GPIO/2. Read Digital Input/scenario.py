@@ -16,9 +16,7 @@ import time
 from Spanner import Spanner
 from Testboard import Testboard
 
-
-TESTBOARD_ID = "200023001347343438323536"
-testboard = Testboard(TESTBOARD_ID)
+testboard = Testboard("testboard_name")
 
 # Our device's 1st Output Pin will be connected to the Testboard's D7, making it
 # our Input Pin 1
