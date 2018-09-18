@@ -35,3 +35,8 @@ if __name__ == "__main__":
     time.sleep(2)
 
     validate_analog_input_less()
+
+    
+    
+    
+    
