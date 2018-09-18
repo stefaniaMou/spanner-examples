@@ -13,10 +13,7 @@ import time
 import spanner
 import Device from AWSDevice
 
-
-DEVICE_ID = "200023001347343438323536"
-
-device = Device(DEVICE_ID)
+device = Device("device_name")
 
 
 def expect_network_cmd():
