@@ -1,12 +1,12 @@
-build_binary:
+# build_binary:
     # compulsory
-    type: 'particle photon'
+#     type: 'particle photon'
     # compulsory
-    source_dir: 'app'
+#     source_dir: 'app'
     # optional
-    build_command: make
+#     build_command: make
     # optional
-    binary_name: my_binary
+#     binary_name: my_binary
 
 testing:
     # compulsory
