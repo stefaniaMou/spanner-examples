@@ -16,7 +16,7 @@ def validate_analog_input_greater():
 
     # Let's say we want to to make sure the voltage is greater than 1.5V. Given the mapping of 0-3.3V to a value of 0-4096, that means the value we have should be higher than aproximately 1861. For the sake of simplicity and because of possible fluctuations in the values, we'll test with 1800, which is aprox. 1.45V.
     # NOTICE: We could also have used analogReadVoltage() as we do in the next example.
-    spanner.assertGreaterThan(19000, value);
+    spanner.assertGreaterThan(100, value);
     # See also assertGreatherThanOrEqual(), or assertEquals()
 
 def validate_analog_input_less():
