@@ -13,10 +13,7 @@ import time
 from Spanner import Spanner
 from Testboard import Testboard
 
-
-TESTBOARD_ID = "200023001347343438323536"
-
-testboard = Testboard(TESTBOARD_ID)
+testboard = Testboard("testboard_name")
 
 DAC1 = "A6"
 
