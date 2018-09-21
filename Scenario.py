@@ -2,6 +2,7 @@ import time
 from Spanner import Spanner
 from Testboard import Testboard
 
+device = Device("tester3")
 testboard = Testboard("tester3")
 
 # Our Testboard's D3 Pin is connected to a power switching circuit that controls
