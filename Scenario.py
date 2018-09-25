@@ -38,7 +38,7 @@ def measure_power_consumption():
     
     res = testboard.measuredPowerConsumption()
     print('res')
-    print(res)
+    print(str(res)))
     # Make sure the total power consumption didn't exceed 100mAh. The
     # measuredPowerConsumption() will return the total power consumption
     # measured in the measuring period, in mAh. Then we use the assertLessThan()
