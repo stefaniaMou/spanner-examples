@@ -29,20 +29,21 @@ def measure_power_consumption():
 
     # Start measuring power consumption
     testboard.startPowerMeasurement()
-
-    print('message from scenario')
     
     # Measure for 5 minutes
     time.sleep(10)
 
     # Stop measuring power consumption
     testboard.stopPowerMeasurement()
-
+    
+    res = testboard.measuredPowerConsumption()
+    print('res')
+    print(res)
     # Make sure the total power consumption didn't exceed 100mAh. The
     # measuredPowerConsumption() will return the total power consumption
     # measured in the measuring period, in mAh. Then we use the assertLessThan()
     # function to assert that this is less than the target value of 100.
-    spanner.assertLessThan(100, testboard.measuredPowerConsumption())
+    spanner.assertLessThan(100, res)
 
 if __name__ == "__main__":
     measure_power_consumption()
