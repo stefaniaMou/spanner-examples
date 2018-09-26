@@ -1,42 +1,49 @@
 import time
 from Spanner import Spanner
 from Testboard import Testboard
+import Device
 
-TESTBOARD_ID = "200023001347343438323536"
-testboard = Testboard(TESTBOARD_ID)
+device = Device.Particle("mydevice")
+testboard = Testboard("mydevice")
 
-# Our device's 1st Analog Output Pin will be connected to the Testboard's A0, making it our Input Pin 1
-INPUT_PIN_1 = "A0"
-# Our device's 2nd Analog Output Pin will be connected to the Testboard's A4, making it our Input Pin 2
-INPUT_PIN_2 = "A4"
+# Our Testboard's D3 Pin is connected to a power switching circuit that controls
+# the power going to the device. When we toggle it HIGH, the device will be
+# powered, when LOW, the device will shut down
+OUTPUT_PIN = "D3"
 
-def validate_analog_input_greater():
-    # Check PIN state
-    # analogRead will give us a value between 0 to 4095, corresponding to a 0-3V3 range.
-    value = testboard.analogRead(INPUT_PIN_1)
+def measure_power_consumption():
 
-    # Let's say we want to to make sure the voltage is greater than 1.5V. Given the mapping of 0-3.3V to a value of 0-4096, that means the value we have should be higher than aproximately 1861. For the sake of simplicity and because of possible fluctuations in the values, we'll test with 1800, which is aprox. 1.45V.
-    # NOTICE: We could also have used analogReadVoltage() as we do in the next example.
-    spanner.assertGreaterThan(1800, value);
-    # See also assertGreatherThanOrEqual(), or assertEquals()
+    # Turn the device off
+    testboard.digitalWrite(OUTPUT_PIN, "LOW");
 
-def validate_analog_input_less():
-    # Check PIN state
-    # In this example, we use analogReadVoltage() which gives us a Voltage value directly, without having to care about the ADC converter. However, keep in mind that this value could be slightly less accurate, and given that it's a float it's not the best fit for checking Equality. Still, it's good enough for most purposes.
-    value = testboard.analogReadVoltage(INPUT_PIN_2)
-
-    spanner.assertLessThan(2.0, value);
-    # See also assertLessThanOrEqual()
-
-if __name__ == "__main__":
-
-    validate_analog_input_greater()
-
+    # Wait for a while for it to shut down
     time.sleep(2)
 
-    validate_analog_input_less()
+    # Turn the device back on
+    testboard.digitalWrite(OUTPUT_PIN, "HIGH");
 
+    # The device runs some initialization actions in the beginning, which are
+    # not indicative of the true power consumption. Therefore we wait for a
+    # while for the initial conditions to pass
+#     time.sleep(5)
+
+    # Start measuring power consumption
+#     testboard.startPowerMeasurement()
     
+    # Measure for 5 minutes
+#     time.sleep(10)
+
+    # Stop measuring power consumption
+#     testboard.stopPowerMeasurement()
     
-    
-    
+#     res = testboard.measuredPowerConsumption()
+#     print('res')
+#     print(str(res))
+    # Make sure the total power consumption didn't exceed 100mAh. The
+    # measuredPowerConsumption() will return the total power consumption
+    # measured in the measuring period, in mAh. Then we use the assertLessThan()
+    # function to assert that this is less than the target value of 100.
+    spanner.assertLessThan(100, 20)
+
+if __name__ == "__main__":
+    measure_power_consumption()
