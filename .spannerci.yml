@@ -1,11 +1,11 @@
 # code_qa:
 #     type: basic
 
-# build_binary:
-#     type: 'particle photon'
-#     source_dir: 'app'
-#     build_command: make
-#     binary_name: my_binary
+build_binary:
+    type: 'particle photon'
+    source_dir: 'app'
+    build_command: make
+    binary_name: my_binary
 #     pre_flight:
 #     post_flight:
 #     on_failure:
