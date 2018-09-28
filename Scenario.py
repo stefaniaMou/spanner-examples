@@ -3,8 +3,8 @@ from Spanner import Spanner
 from Testboard import Testboard
 import Device
 
-device = Device.Particle("mydevice")
-testboard = Testboard("mydevice")
+device = Device.Particle("FirstDev")
+testboard = Testboard("Wubby_Test")
 
 # Our Testboard's D3 Pin is connected to a power switching circuit that controls
 # the power going to the device. When we toggle it HIGH, the device will be
