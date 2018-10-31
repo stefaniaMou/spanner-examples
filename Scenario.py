@@ -3,7 +3,6 @@ from Spanner import Spanner
 from Testboard import Testboard
 import Device
 
-device = Device.Particle("FirstDev")
 testboard = Testboard("Wubby_Test")
 
 # Our Testboard's D3 Pin is connected to a power switching circuit that controls
