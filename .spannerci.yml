@@ -1,21 +1,23 @@
-# code_qa:
-#     type: basic
-
-build_binary:
-    builder: particle photon
-    source: app/
-    script: make
-#     build_command: make
+# build_binary:
+#     type: 'aws esp32'
+#     source_dir: 'app'
 #     binary_name: my_binary
-#     pre_flight:
-#     post_flight:
-#     on_failure:
-#     on_success:
-
-# testing:
-#     source_dir: 'Scenario.py'    
-#     binary_update:
-#         platform: 'particle photon'
-#         binary: auto
-#         binary: https://drive.google.com/open?id=1pqwckXPclrgKaeJy3-7hWkkfVH2b-61l
-#         binary: binary/mike_binary.bin
+#     env_vars:
+#         - $SPN_AWS_ACCESS_KEY_ID
+#         - $SPN_AWS_SECRET_ACCESS_KEY
+#         - $SPN_ESP32_THING_NAME
+#         - $SPN_ESP32_WIFI_SSID
+#         - $SPN_ESP32_WIFI_PASSWORD
+#         - $SPN_ESP32_WIFI_SECURITY
+        
+testing:
+    source_dir: 'Scenario.py'
+    env_vars:
+        - $SPN_PARTICLE_TOKEN
+    binary_update:
+         devices:
+            - $DEVICE_1    
+         platform: 'particle photon'
+         #binary: auto
+         binary: https://drive.google.com/open?id=1pqwckXPclrgKaeJy3-7hWkkfVH2b-61l
+         #binary: binary/mike_binary.bin
