@@ -46,6 +46,10 @@ def measure_power_consumption():
 
 if __name__ == "__main__":
     measure_power_consumption()
+    measure_power_consumption()
+    measure_power_consumption()
+    measure_power_consumption()
+    measure_power_consumption()
 
     
     
