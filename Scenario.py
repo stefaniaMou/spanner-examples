@@ -81,8 +81,8 @@ def measurer_consumption():
 if __name__ == "__main__":
     measure_power_consumption()
     measurer_consumption()
-
-    
+    measure_power_consumption()
+    measurer_consumption()
     
     
     
