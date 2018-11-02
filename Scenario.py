@@ -80,8 +80,11 @@ def measurer_consumption():
     
 if __name__ == "__main__":
     measure_power_consumption()
+    sleep(5)
     measurer_consumption()
+    sleep(5)
     measure_power_consumption()
+    sleep(5)
     measurer_consumption()
     
     
