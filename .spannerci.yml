@@ -1,6 +1,7 @@
-# build_binary:
-#     type: 'aws esp32'
-#     source_dir: 'app'
+build_binary:
+    builder: 'particle photon'
+    source: 'app'
+    
 #     binary_name: my_binary
 #     env_vars:
 #         - $SPN_AWS_ACCESS_KEY_ID
