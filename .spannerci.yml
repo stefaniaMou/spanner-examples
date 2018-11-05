@@ -1,6 +1,6 @@
-build_binary:
-    builder: 'particle photon'
-    source: 'app'
+# build_binary:
+#     builder: 'particle photon'
+#     source: 'app'
     
 #     binary_name: my_binary
 #     env_vars:
