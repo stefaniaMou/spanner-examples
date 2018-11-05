@@ -1,6 +1,6 @@
-# build_binary:
-#     builder: 'particle photon'
-#     source: 'app'
+build_binary:
+    builder: 'particle photon'
+    source: 'app'
     
 #     binary_name: my_binary
 #     env_vars:
@@ -11,14 +11,14 @@
 #         - $SPN_ESP32_WIFI_PASSWORD
 #         - $SPN_ESP32_WIFI_SECURITY
         
-testing:
-    script: 'Scenario.py'
-    env_vars:
-        - $SPN_PARTICLE_TOKEN
-    device_update:
-         devices:
-            - $DEVICE_1    
-         ota_method: 'particle'
-         #binary: auto
-         binary: https://drive.google.com/open?id=1pqwckXPclrgKaeJy3-7hWkkfVH2b-61l
-         #binary: binary/mike_binary.bin
+# testing:
+#     script: 'Scenario.py'
+#     env_vars:
+#         - $SPN_PARTICLE_TOKEN
+#     device_update:
+#          devices:
+#             - $DEVICE_1    
+#          ota_method: 'particle'
+#          #binary: auto
+#          binary: https://drive.google.com/open?id=1pqwckXPclrgKaeJy3-7hWkkfVH2b-61l
+#          #binary: binary/mike_binary.bin
